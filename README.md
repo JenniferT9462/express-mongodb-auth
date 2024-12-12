@@ -18,7 +18,7 @@ The express-mongodb-auth project provides a foundational setup for building an a
         npm install express mongoose dotenv 
     - Open your new project in VSCode:
         ```bash
-        code .v
+        code .
 ### Create the Server:
 - Create a file named `index.js`.
     - Copy this server code into `index.js`:
