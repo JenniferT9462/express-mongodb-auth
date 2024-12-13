@@ -5,7 +5,7 @@ const port = 3000;
 
 //Import environment variables
 require('dotenv').config();
-const atlasUrl = process.env.ATLAS_URL;
+const atlasUri = process.env.ATLAS_URI;
 
 //Import user model
 const User = require('./models/User')
@@ -14,7 +14,7 @@ const User = require('./models/User')
 app.use(express.json());
 
 mongoose
-  .connect(atlasUrl, {
+  .connect(atlasUri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
